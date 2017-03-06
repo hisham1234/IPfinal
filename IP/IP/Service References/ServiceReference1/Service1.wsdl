@@ -38,6 +38,12 @@
   <wsdl:message name="IService1_addGrp_OutputMessage">
     <wsdl:part name="parameters" element="tns:addGrpResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_viewGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:viewGroup" />
+  </wsdl:message>
+  <wsdl:message name="IService1_viewGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:viewGroupResponse" />
+  </wsdl:message>
   <wsdl:portType name="IService1">
     <wsdl:operation name="GetData">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetData" message="tns:IService1_GetData_InputMessage" />
@@ -58,6 +64,10 @@
     <wsdl:operation name="addGrp">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/addGrp" message="tns:IService1_addGrp_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/addGrpResponse" message="tns:IService1_addGrp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="viewGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/viewGroup" message="tns:IService1_viewGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/viewGroupResponse" message="tns:IService1_viewGroup_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
@@ -100,6 +110,15 @@
     </wsdl:operation>
     <wsdl:operation name="addGrp">
       <soap:operation soapAction="http://tempuri.org/IService1/addGrp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="viewGroup">
+      <soap:operation soapAction="http://tempuri.org/IService1/viewGroup" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

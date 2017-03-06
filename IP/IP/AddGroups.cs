@@ -26,10 +26,23 @@ namespace IP
         private void button1_Click(object sender, EventArgs e)
         {
             Service1Client obj = new Service1Client();
-            MessageBox.Show(obj.addGrp(textBox1.Text,textBox3.Text,textBox4.Text));
+            MessageBox.Show(obj.addGrp(textBox1.Text, textBox2.Text, textBox3.Text,textBox4.Text));
             textBox1.Clear();
             textBox3.Clear();
             textBox4.Clear();
+
+            textBox2.Clear();
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Service1Client obj = new Service1Client();
+           dataGridView1.DataSource=obj.viewGroup();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }

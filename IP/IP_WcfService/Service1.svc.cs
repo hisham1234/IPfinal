@@ -35,16 +35,21 @@ namespace IP_WcfService
 
         }
 
-        public string addGrp(string gid,string sno,string eno)
+        public string addGrp(string gid,string no,string sno,string eno)
         {
             Groups grp = new Groups();
             grp._grpId = gid;
             grp._startNo = sno;
             grp._endNo = eno;
+            grp._no = int.Parse(no);
 
            return grp.addGrp();
         }
-
+        public DataTable viewGroup()
+        {
+            Groups gp = new Groups();
+            return gp.viewGroup();
+        }
 
 
         public string GetData(int value)
