@@ -34,11 +34,18 @@ namespace IP_WcfService
             return lec.viewLec();
 
         }
-        //public List<Lecturer> GetAll()
-        //{
-        //    Lecturer lc = new Lecturer();
-        //    return lc.GetAll();
-        //}
+
+        public string addGrp(string gid,string sno,string eno)
+        {
+            Groups grp = new Groups();
+            grp._grpId = gid;
+            grp._startNo = sno;
+            grp._endNo = eno;
+
+           return grp.addGrp();
+        }
+
+
 
         public string GetData(int value)
         {

@@ -101,6 +101,12 @@ namespace IP.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/viewLecturer", ReplyAction="http://tempuri.org/IService1/viewLecturerResponse")]
         System.Threading.Tasks.Task<System.Data.DataTable> viewLecturerAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/addGrp", ReplyAction="http://tempuri.org/IService1/addGrpResponse")]
+        string addGrp(string gid, string sno, string eno);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/addGrp", ReplyAction="http://tempuri.org/IService1/addGrpResponse")]
+        System.Threading.Tasks.Task<string> addGrpAsync(string gid, string sno, string eno);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -160,6 +166,14 @@ namespace IP.ServiceReference1 {
         
         public System.Threading.Tasks.Task<System.Data.DataTable> viewLecturerAsync() {
             return base.Channel.viewLecturerAsync();
+        }
+        
+        public string addGrp(string gid, string sno, string eno) {
+            return base.Channel.addGrp(gid, sno, eno);
+        }
+        
+        public System.Threading.Tasks.Task<string> addGrpAsync(string gid, string sno, string eno) {
+            return base.Channel.addGrpAsync(gid, sno, eno);
         }
     }
 }

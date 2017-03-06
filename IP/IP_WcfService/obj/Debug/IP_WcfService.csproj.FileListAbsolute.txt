@@ -17,3 +17,22 @@ D:\NSBM STAGE 2\Resource Allocation\IP\IP_WcfService\bin\Microsoft.ApplicationIn
 D:\NSBM STAGE 2\Resource Allocation\IP\IP_WcfService\obj\Debug\IP_WcfService.dll
 D:\NSBM STAGE 2\Resource Allocation\IP\IP_WcfService\obj\Debug\IP_WcfService.pdb
 D:\NSBM STAGE 2\Resource Allocation\IP\IP_WcfService\obj\Debug\IP_WcfService.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\GitHub\IPfinal\IP\IP_WcfService\bin\ApplicationInsights.config
+C:\Users\User\Documents\GitHub\IPfinal\IP\IP_WcfService\bin\IP_WcfService.dll.config
+C:\Users\User\Documents\GitHub\IPfinal\IP\IP_WcfService\bin\IP_WcfService.dll
+C:\Users\User\Documents\GitHub\IPfinal\IP\IP_WcfService\bin\IP_WcfService.pdb
+C:\Users\User\Documents\GitHub\IPfinal\IP\IP_WcfService\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\User\Documents\GitHub\IPfinal\IP\IP_WcfService\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\User\Documents\GitHub\IPfinal\IP\IP_WcfService\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\User\Documents\GitHub\IPfinal\IP\IP_WcfService\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\User\Documents\GitHub\IPfinal\IP\IP_WcfService\bin\Microsoft.AI.Web.dll
+C:\Users\User\Documents\GitHub\IPfinal\IP\IP_WcfService\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\User\Documents\GitHub\IPfinal\IP\IP_WcfService\bin\Microsoft.ApplicationInsights.dll
+C:\Users\User\Documents\GitHub\IPfinal\IP\IP_WcfService\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\User\Documents\GitHub\IPfinal\IP\IP_WcfService\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\User\Documents\GitHub\IPfinal\IP\IP_WcfService\bin\Microsoft.AI.Web.xml
+C:\Users\User\Documents\GitHub\IPfinal\IP\IP_WcfService\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\User\Documents\GitHub\IPfinal\IP\IP_WcfService\bin\Microsoft.ApplicationInsights.xml
+C:\Users\User\Documents\GitHub\IPfinal\IP\IP_WcfService\obj\Debug\IP_WcfService.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\GitHub\IPfinal\IP\IP_WcfService\obj\Debug\IP_WcfService.dll
+C:\Users\User\Documents\GitHub\IPfinal\IP\IP_WcfService\obj\Debug\IP_WcfService.pdb

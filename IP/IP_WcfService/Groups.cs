@@ -59,7 +59,24 @@ namespace IP_WcfService
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["resourceAlloc"].ToString());
             string add = "insert into groups(group_id,startNo,endNo) values(@gid,@sno,@eno)";
 
-            return "";
+            SqlCommand cmd = new SqlCommand(add, con);
+            cmd.Parameters.AddWithValue("@gid", _grpId);
+
+            cmd.Parameters.AddWithValue("@sno", _startNo);
+
+            cmd.Parameters.AddWithValue("@eno", _endNo);
+
+            try
+            {
+                con.Open();
+                cmd.ExecuteNonQuery();
+                return "group created succefully";
+            }
+            catch(SqlException ex)
+            {
+                return ex.Message;
+            }
+          
         }
 
 

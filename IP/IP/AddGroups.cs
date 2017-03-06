@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using IP.ServiceReference1;
 
 namespace IP
 {
@@ -19,6 +20,16 @@ namespace IP
 
         private void label2_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Service1Client obj = new Service1Client();
+            MessageBox.Show(obj.addGrp(textBox1.Text,textBox3.Text,textBox4.Text));
+            textBox1.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
 
         }
     }
