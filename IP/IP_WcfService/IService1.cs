@@ -27,9 +27,11 @@ namespace IP_WcfService
         DataTable viewLecturer();
 
         [OperationContract]
-        string addGrp(string gid, string sno, string eno);
-        //[OperationContract]
-        //List<Lecturer> GetAll();
+        string addGrp(string gid, string no, string eno,string sno);
+
+        [OperationContract]
+        DataTable viewGroup();
+        
 
         // TODO: Add your service operations here
     }

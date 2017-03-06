@@ -103,10 +103,16 @@ namespace IP.ServiceReference1 {
         System.Threading.Tasks.Task<System.Data.DataTable> viewLecturerAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/addGrp", ReplyAction="http://tempuri.org/IService1/addGrpResponse")]
-        string addGrp(string gid, string sno, string eno);
+        string addGrp(string gid, string no, string eno, string sno);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/addGrp", ReplyAction="http://tempuri.org/IService1/addGrpResponse")]
-        System.Threading.Tasks.Task<string> addGrpAsync(string gid, string sno, string eno);
+        System.Threading.Tasks.Task<string> addGrpAsync(string gid, string no, string eno, string sno);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/viewGroup", ReplyAction="http://tempuri.org/IService1/viewGroupResponse")]
+        System.Data.DataTable viewGroup();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/viewGroup", ReplyAction="http://tempuri.org/IService1/viewGroupResponse")]
+        System.Threading.Tasks.Task<System.Data.DataTable> viewGroupAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -168,12 +174,20 @@ namespace IP.ServiceReference1 {
             return base.Channel.viewLecturerAsync();
         }
         
-        public string addGrp(string gid, string sno, string eno) {
-            return base.Channel.addGrp(gid, sno, eno);
+        public string addGrp(string gid, string no, string eno, string sno) {
+            return base.Channel.addGrp(gid, no, eno, sno);
         }
         
-        public System.Threading.Tasks.Task<string> addGrpAsync(string gid, string sno, string eno) {
-            return base.Channel.addGrpAsync(gid, sno, eno);
+        public System.Threading.Tasks.Task<string> addGrpAsync(string gid, string no, string eno, string sno) {
+            return base.Channel.addGrpAsync(gid, no, eno, sno);
+        }
+        
+        public System.Data.DataTable viewGroup() {
+            return base.Channel.viewGroup();
+        }
+        
+        public System.Threading.Tasks.Task<System.Data.DataTable> viewGroupAsync() {
+            return base.Channel.viewGroupAsync();
         }
     }
 }
