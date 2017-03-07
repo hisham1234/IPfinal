@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using IP.ServiceReference1;
 
 namespace IP
 {
@@ -15,6 +16,19 @@ namespace IP
         public AddInstructor()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Service1Client obj = new Service1Client();
+            MessageBox.Show(obj.addIns(comboBox1.SelectedValue.ToString(),textBox9.Text));
+        }
+
+        private void AddInstructor_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'resourceAllocationDataSet.Students' table. You can move, or remove it, as needed.
+            this.studentsTableAdapter.Fill(this.resourceAllocationDataSet.Students);
+
         }
     }
 }

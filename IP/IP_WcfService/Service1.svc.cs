@@ -51,6 +51,13 @@ namespace IP_WcfService
             return gp.viewGroup();
         }
 
+        public string addIns(string nic,string id)
+        {
+            Instructors ins = new Instructors();
+            ins._nic = nic;
+            ins._instr_id = id;
+            return ins.add();
+        }
 
         public string GetData(int value)
         {

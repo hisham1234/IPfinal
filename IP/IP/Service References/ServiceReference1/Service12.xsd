@@ -112,4 +112,19 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="addIns">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nic" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addInsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="addInsResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

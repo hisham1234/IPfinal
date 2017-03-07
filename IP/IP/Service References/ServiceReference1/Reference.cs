@@ -113,6 +113,12 @@ namespace IP.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/viewGroup", ReplyAction="http://tempuri.org/IService1/viewGroupResponse")]
         System.Threading.Tasks.Task<System.Data.DataTable> viewGroupAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/addIns", ReplyAction="http://tempuri.org/IService1/addInsResponse")]
+        string addIns(string nic, string id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/addIns", ReplyAction="http://tempuri.org/IService1/addInsResponse")]
+        System.Threading.Tasks.Task<string> addInsAsync(string nic, string id);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -188,6 +194,14 @@ namespace IP.ServiceReference1 {
         
         public System.Threading.Tasks.Task<System.Data.DataTable> viewGroupAsync() {
             return base.Channel.viewGroupAsync();
+        }
+        
+        public string addIns(string nic, string id) {
+            return base.Channel.addIns(nic, id);
+        }
+        
+        public System.Threading.Tasks.Task<string> addInsAsync(string nic, string id) {
+            return base.Channel.addInsAsync(nic, id);
         }
     }
 }
