@@ -40,12 +40,14 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.resourceAllocationDataSet = new IP.ResourceAllocationDataSet();
             this.studentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.resourceAllocationDataSet = new IP.ResourceAllocationDataSet();
             this.studentsTableAdapter = new IP.ResourceAllocationDataSetTableAdapters.StudentsTableAdapter();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.resourceAllocationDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resourceAllocationDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -138,6 +140,7 @@
             this.button2.TabIndex = 58;
             this.button2.Text = "View Instructors";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // comboBox1
             // 
@@ -150,25 +153,34 @@
             this.comboBox1.TabIndex = 59;
             this.comboBox1.ValueMember = "NIC";
             // 
-            // resourceAllocationDataSet
-            // 
-            this.resourceAllocationDataSet.DataSetName = "ResourceAllocationDataSet";
-            this.resourceAllocationDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // studentsBindingSource
             // 
             this.studentsBindingSource.DataMember = "Students";
             this.studentsBindingSource.DataSource = this.resourceAllocationDataSet;
             // 
+            // resourceAllocationDataSet
+            // 
+            this.resourceAllocationDataSet.DataSetName = "ResourceAllocationDataSet";
+            this.resourceAllocationDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // studentsTableAdapter
             // 
             this.studentsTableAdapter.ClearBeforeFill = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(397, 231);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(308, 190);
+            this.dataGridView1.TabIndex = 60;
             // 
             // AddInstructor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(762, 492);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label11);
@@ -183,8 +195,9 @@
             this.Text = "Add New Instructor";
             this.Load += new System.EventHandler(this.AddInstructor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.resourceAllocationDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resourceAllocationDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -204,5 +217,6 @@
         private ResourceAllocationDataSet resourceAllocationDataSet;
         private System.Windows.Forms.BindingSource studentsBindingSource;
         private ResourceAllocationDataSetTableAdapters.StudentsTableAdapter studentsTableAdapter;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

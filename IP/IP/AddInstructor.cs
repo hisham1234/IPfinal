@@ -30,5 +30,13 @@ namespace IP
             this.studentsTableAdapter.Fill(this.resourceAllocationDataSet.Students);
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Service1Client obj = new Service1Client();
+            dataGridView1.DataSource = obj.viewIns();
+            //dataGridView1.d
+            
+        }
     }
 }

@@ -83,6 +83,26 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ResourceAllocationDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ResourceAllocationDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceAllocationDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceAllocationDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceAllocationDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceAllocationDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceAllocationDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceAllocationDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceAllocationDataSet4.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Service References\ServiceReference1\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -133,6 +153,50 @@
     </None>
     <None Include="ResourceAllocationDataSet.xss">
       <DependentUpon>ResourceAllocationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceAllocationDataSet1.xsc">
+      <DependentUpon>ResourceAllocationDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceAllocationDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ResourceAllocationDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ResourceAllocationDataSet1.xss">
+      <DependentUpon>ResourceAllocationDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceAllocationDataSet2.xsc">
+      <DependentUpon>ResourceAllocationDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceAllocationDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ResourceAllocationDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ResourceAllocationDataSet2.xss">
+      <DependentUpon>ResourceAllocationDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceAllocationDataSet3.xsc">
+      <DependentUpon>ResourceAllocationDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceAllocationDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ResourceAllocationDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ResourceAllocationDataSet3.xss">
+      <DependentUpon>ResourceAllocationDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceAllocationDataSet4.xsc">
+      <DependentUpon>ResourceAllocationDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceAllocationDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ResourceAllocationDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ResourceAllocationDataSet4.xss">
+      <DependentUpon>ResourceAllocationDataSet4.xsd</DependentUpon>
     </None>
     <None Include="Service References\ServiceReference1\IP.ServiceReference1.CompositeType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>

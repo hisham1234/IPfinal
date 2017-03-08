@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ResourceAllocationDataSet1" targetNamespace="http://tempuri.org/ResourceAllocationDataSet1.xsd" xmlns:mstns="http://tempuri.org/ResourceAllocationDataSet1.xsd" xmlns="http://tempuri.org/ResourceAllocationDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ResourceAllocationConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ResourceAllocationConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.IP.Properties.Settings.GlobalReference.Default.ResourceAllocationConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="instructorsTableAdapter" GeneratorDataComponentClassName="instructorsTableAdapter" Name="instructors" UserDataComponentName="instructorsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ResourceAllocationConnectionString (Settings)" DbObjectName="ResourceAllocation.dbo.instructors" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT instructor_id FROM dbo.instructors</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="instructor_id" DataSetColumn="instructor_id" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ResourceAllocationDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ResourceAllocationDataSet1" msprop:Generator_UserDSName="ResourceAllocationDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="instructors" msprop:Generator_TableClassName="instructorsDataTable" msprop:Generator_TableVarName="tableinstructors" msprop:Generator_TablePropName="instructors" msprop:Generator_RowDeletingName="instructorsRowDeleting" msprop:Generator_RowChangingName="instructorsRowChanging" msprop:Generator_RowEvHandlerName="instructorsRowChangeEventHandler" msprop:Generator_RowDeletedName="instructorsRowDeleted" msprop:Generator_UserTableName="instructors" msprop:Generator_RowChangedName="instructorsRowChanged" msprop:Generator_RowEvArgName="instructorsRowChangeEvent" msprop:Generator_RowClassName="instructorsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="instructor_id" msprop:Generator_ColumnVarNameInTable="columninstructor_id" msprop:Generator_ColumnPropNameInRow="instructor_id" msprop:Generator_ColumnPropNameInTable="instructor_idColumn" msprop:Generator_UserColumnName="instructor_id" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

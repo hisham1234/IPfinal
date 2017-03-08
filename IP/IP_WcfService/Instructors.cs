@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
@@ -65,5 +66,23 @@ namespace IP_WcfService
 
 
         }
+        public DataTable viewLec()
+        {
+
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["resourceAlloc"].ToString());
+
+            DataTable dt = new DataTable();
+            string vw = "select * from instructors";
+
+            SqlCommand cmd = new SqlCommand(vw, con);
+
+            SqlDataAdapter adp = new SqlDataAdapter(cmd);
+            adp.Fill(dt);
+            dt.TableName = "instructors";
+
+            return dt;
+
+        }
+
     }
 }

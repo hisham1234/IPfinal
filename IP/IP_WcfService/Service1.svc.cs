@@ -58,6 +58,12 @@ namespace IP_WcfService
             ins._instr_id = id;
             return ins.add();
         }
+        public DataTable viewIns()
+        {
+            Instructors ins = new Instructors();
+           return  ins.viewLec();
+        }
+
 
         public string GetData(int value)
         {
