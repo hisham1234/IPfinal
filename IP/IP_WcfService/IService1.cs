@@ -31,8 +31,12 @@ namespace IP_WcfService
 
         [OperationContract]
         DataTable viewGroup();
-        
 
+        [OperationContract]
+        string addIns(string nic, string id);
+
+        [OperationContract]
+        DataTable viewIns();
         // TODO: Add your service operations here
     }
 

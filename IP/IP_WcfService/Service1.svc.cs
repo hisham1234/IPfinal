@@ -51,6 +51,19 @@ namespace IP_WcfService
             return gp.viewGroup();
         }
 
+        public string addIns(string nic,string id)
+        {
+            Instructors ins = new Instructors();
+            ins._nic = nic;
+            ins._instr_id = id;
+            return ins.add();
+        }
+        public DataTable viewIns()
+        {
+            Instructors ins = new Instructors();
+           return  ins.viewLec();
+        }
+
 
         public string GetData(int value)
         {
