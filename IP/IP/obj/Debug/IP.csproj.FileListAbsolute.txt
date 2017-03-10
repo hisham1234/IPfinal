@@ -37,3 +37,16 @@ C:\Users\User\Documents\GitHub\IPfinal\IP\IP\obj\Debug\IP.AddPracticalSessions.r
 C:\Users\User\Documents\GitHub\IPfinal\IP\IP\obj\Debug\IP.AdminPanelEntry.resources
 C:\Users\User\Documents\GitHub\IPfinal\IP\IP\obj\Debug\IP.Properties.Resources.resources
 C:\Users\User\Documents\GitHub\IPfinal\IP\IP\obj\Debug\IP.csproj.GenerateResource.Cache
+C:\Users\Dimuthu\Documents\GitHub\IPfinal\IP\IP\bin\Debug\IP.exe.config
+C:\Users\Dimuthu\Documents\GitHub\IPfinal\IP\IP\obj\Debug\IP.exe
+C:\Users\Dimuthu\Documents\GitHub\IPfinal\IP\IP\obj\Debug\IP.pdb
+C:\Users\Dimuthu\Documents\GitHub\IPfinal\IP\IP\bin\Debug\IP.exe
+C:\Users\Dimuthu\Documents\GitHub\IPfinal\IP\IP\bin\Debug\IP.pdb
+C:\Users\Dimuthu\Documents\GitHub\IPfinal\IP\IP\obj\Debug\IP.csprojResolveAssemblyReference.cache
+C:\Users\Dimuthu\Documents\GitHub\IPfinal\IP\IP\obj\Debug\IP.AddGroups.resources
+C:\Users\Dimuthu\Documents\GitHub\IPfinal\IP\IP\obj\Debug\IP.AddInstructor.resources
+C:\Users\Dimuthu\Documents\GitHub\IPfinal\IP\IP\obj\Debug\IP.AddLecturer.resources
+C:\Users\Dimuthu\Documents\GitHub\IPfinal\IP\IP\obj\Debug\IP.AddPracticalSessions.resources
+C:\Users\Dimuthu\Documents\GitHub\IPfinal\IP\IP\obj\Debug\IP.AdminPanelEntry.resources
+C:\Users\Dimuthu\Documents\GitHub\IPfinal\IP\IP\obj\Debug\IP.Properties.Resources.resources
+C:\Users\Dimuthu\Documents\GitHub\IPfinal\IP\IP\obj\Debug\IP.csproj.GenerateResource.Cache
