@@ -37,8 +37,11 @@ namespace IP
 
         private void button1_Click(object sender, EventArgs e)
         {
-            comboBox6.SelectedIndex = 1;
-            label8.Text = comboBox6.SelectedIndex.ToString();
+          DateTime d1=  dateTimePicker1.Value.Date;
+          DateTime d2= dateTimePicker2.Value.Date;
+
+            label13.Text = d2.ToString().Substring(0,9);
+
         }
 
         private void comboBox6_SelectedIndexChanged(object sender, EventArgs e)
@@ -60,10 +63,20 @@ namespace IP
         {
             string day = comboBox1.SelectedItem.ToString();
             string time = comboBox5.SelectedItem.ToString();
-            string gid = comboBox2.SelectedItem.ToString();
 
+            DataRowView drow = (DataRowView)comboBox2.SelectedItem;
+            string gid = drow.Row.ItemArray[0].ToString();
+
+                      
             Service1Client obj = new Service1Client();
-         dataGridView1.DataSource=obj.viewLabs(day,time,gid);
+            DataTable ds= obj.viewLabs(day,time, gid);
+            dataGridView1.DataSource = ds;
+
+            
+
+
+
+
 
 
         }

@@ -57,24 +57,27 @@ namespace IP_WcfService
 
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["resourceAlloc"].ToString());
 
-        public DataTable viewLabs()
+        public DataTable   viewLabs()
         {
             DataTable dt = new DataTable();
             string vwlbs = "exec viewLabs @day,@time,@gid";
 
+
             SqlCommand cmd = new SqlCommand(vwlbs, con);
-            cmd.Parameters.AddWithValue("day", _day);
-            cmd.Parameters.AddWithValue("time", _time);
-            cmd.Parameters.AddWithValue("gid", _gid);
+            con.Open();
+          
+            cmd.Parameters.AddWithValue("@day", _day);
+            cmd.Parameters.AddWithValue("@time", _time);
+           cmd.Parameters.AddWithValue("@gid", _gid);
+
+            cmd.Parameters.AddWithValue("@d",2);
 
             SqlDataAdapter adp = new SqlDataAdapter(cmd);
-
+            con.Close();
             adp.Fill(dt);
-            dt.TableName = "viewLabs";
-           // dt.BeginLoadData
 
+            dt.TableName = "Practical_Sessions";
             return dt;
-
         }
     }
 }
