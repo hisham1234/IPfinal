@@ -42,42 +42,49 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.groupsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.resourceAllocationDataSet2 = new IP.ResourceAllocationDataSet2();
             this.label9 = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.instructorsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.resourceAllocationDataSet1 = new IP.ResourceAllocationDataSet1();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.resourceAllocationDataSet = new IP.ResourceAllocationDataSet();
             this.resourceAllocationDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.resourceAllocationDataSetBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.resourceAllocationDataSet1 = new IP.ResourceAllocationDataSet1();
-            this.instructorsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.instructorsTableAdapter = new IP.ResourceAllocationDataSet1TableAdapters.instructorsTableAdapter();
-            this.resourceAllocationDataSet2 = new IP.ResourceAllocationDataSet2();
-            this.groupsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupsTableAdapter = new IP.ResourceAllocationDataSet2TableAdapters.groupsTableAdapter();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.resourceAllocationDataSet3 = new IP.ResourceAllocationDataSet3();
             this.modulesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.resourceAllocationDataSet3 = new IP.ResourceAllocationDataSet3();
             this.modulesTableAdapter = new IP.ResourceAllocationDataSet3TableAdapters.ModulesTableAdapter();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.resourceAllocationDataSet4 = new IP.ResourceAllocationDataSet4();
             this.labsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.resourceAllocationDataSet4 = new IP.ResourceAllocationDataSet4();
             this.labsTableAdapter = new IP.ResourceAllocationDataSet4TableAdapters.LabsTableAdapter();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.comboBox8 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resourceAllocationDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.instructorsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resourceAllocationDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.resourceAllocationDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.resourceAllocationDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.resourceAllocationDataSetBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.resourceAllocationDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.instructorsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.resourceAllocationDataSet2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.resourceAllocationDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.modulesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.resourceAllocationDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resourceAllocationDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.labsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resourceAllocationDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label11
@@ -210,6 +217,16 @@
             this.comboBox2.Size = new System.Drawing.Size(198, 28);
             this.comboBox2.TabIndex = 70;
             // 
+            // groupsBindingSource
+            // 
+            this.groupsBindingSource.DataMember = "groups";
+            this.groupsBindingSource.DataSource = this.resourceAllocationDataSet2;
+            // 
+            // resourceAllocationDataSet2
+            // 
+            this.resourceAllocationDataSet2.DataSetName = "ResourceAllocationDataSet2";
+            this.resourceAllocationDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -231,10 +248,20 @@
             this.comboBox3.Size = new System.Drawing.Size(198, 28);
             this.comboBox3.TabIndex = 72;
             // 
+            // instructorsBindingSource
+            // 
+            this.instructorsBindingSource.DataMember = "instructors";
+            this.instructorsBindingSource.DataSource = this.resourceAllocationDataSet1;
+            // 
+            // resourceAllocationDataSet1
+            // 
+            this.resourceAllocationDataSet1.DataSetName = "ResourceAllocationDataSet1";
+            this.resourceAllocationDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(413, 429);
+            this.button2.Location = new System.Drawing.Point(411, 507);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(313, 40);
             this.button2.TabIndex = 74;
@@ -244,7 +271,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(206, 429);
+            this.button1.Location = new System.Drawing.Point(204, 507);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(111, 40);
             this.button1.TabIndex = 73;
@@ -267,29 +294,9 @@
             this.resourceAllocationDataSetBindingSource1.DataSource = this.resourceAllocationDataSet;
             this.resourceAllocationDataSetBindingSource1.Position = 0;
             // 
-            // resourceAllocationDataSet1
-            // 
-            this.resourceAllocationDataSet1.DataSetName = "ResourceAllocationDataSet1";
-            this.resourceAllocationDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // instructorsBindingSource
-            // 
-            this.instructorsBindingSource.DataMember = "instructors";
-            this.instructorsBindingSource.DataSource = this.resourceAllocationDataSet1;
-            // 
             // instructorsTableAdapter
             // 
             this.instructorsTableAdapter.ClearBeforeFill = true;
-            // 
-            // resourceAllocationDataSet2
-            // 
-            this.resourceAllocationDataSet2.DataSetName = "ResourceAllocationDataSet2";
-            this.resourceAllocationDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // groupsBindingSource
-            // 
-            this.groupsBindingSource.DataMember = "groups";
-            this.groupsBindingSource.DataSource = this.resourceAllocationDataSet2;
             // 
             // groupsTableAdapter
             // 
@@ -305,15 +312,15 @@
             this.comboBox4.Size = new System.Drawing.Size(198, 21);
             this.comboBox4.TabIndex = 75;
             // 
-            // resourceAllocationDataSet3
-            // 
-            this.resourceAllocationDataSet3.DataSetName = "ResourceAllocationDataSet3";
-            this.resourceAllocationDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // modulesBindingSource
             // 
             this.modulesBindingSource.DataMember = "Modules";
             this.modulesBindingSource.DataSource = this.resourceAllocationDataSet3;
+            // 
+            // resourceAllocationDataSet3
+            // 
+            this.resourceAllocationDataSet3.DataSetName = "ResourceAllocationDataSet3";
+            this.resourceAllocationDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // modulesTableAdapter
             // 
@@ -354,35 +361,105 @@
             this.comboBox6.TabIndex = 78;
             this.comboBox6.SelectedIndexChanged += new System.EventHandler(this.comboBox6_SelectedIndexChanged);
             // 
-            // resourceAllocationDataSet4
-            // 
-            this.resourceAllocationDataSet4.DataSetName = "ResourceAllocationDataSet4";
-            this.resourceAllocationDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // labsBindingSource
             // 
             this.labsBindingSource.DataMember = "Labs";
             this.labsBindingSource.DataSource = this.resourceAllocationDataSet4;
             // 
+            // resourceAllocationDataSet4
+            // 
+            this.resourceAllocationDataSet4.DataSetName = "ResourceAllocationDataSet4";
+            this.resourceAllocationDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // labsTableAdapter
             // 
             this.labsTableAdapter.ClearBeforeFill = true;
             // 
+            // comboBox7
+            // 
+            this.comboBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Items.AddRange(new object[] {
+            "9-11",
+            "11.15-1.15",
+            "2-4"});
+            this.comboBox7.Location = new System.Drawing.Point(528, 407);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(198, 28);
+            this.comboBox7.TabIndex = 84;
+            // 
+            // comboBox8
+            // 
+            this.comboBox8.DataSource = this.instructorsBindingSource;
+            this.comboBox8.DisplayMember = "instructor_id";
+            this.comboBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox8.FormattingEnabled = true;
+            this.comboBox8.Location = new System.Drawing.Point(526, 465);
+            this.comboBox8.Name = "comboBox8";
+            this.comboBox8.Size = new System.Drawing.Size(198, 28);
+            this.comboBox8.TabIndex = 83;
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(472, 398);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(409, 473);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 13);
-            this.label8.TabIndex = 79;
-            this.label8.Text = "label8";
+            this.label8.Size = new System.Drawing.Size(63, 20);
+            this.label8.TabIndex = 82;
+            this.label8.Text = "Term Id";
+            // 
+            // comboBox9
+            // 
+            this.comboBox9.DataSource = this.groupsBindingSource;
+            this.comboBox9.DisplayMember = "Group_id";
+            this.comboBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox9.FormattingEnabled = true;
+            this.comboBox9.Location = new System.Drawing.Point(169, 473);
+            this.comboBox9.Name = "comboBox9";
+            this.comboBox9.Size = new System.Drawing.Size(198, 28);
+            this.comboBox9.TabIndex = 81;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(33, 473);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(69, 20);
+            this.label10.TabIndex = 80;
+            this.label10.Text = "Batch Id";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(409, 415);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(64, 20);
+            this.label13.TabIndex = 79;
+            this.label13.Text = "Prac_Id";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(479, 281);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(346, 174);
+            this.dataGridView1.TabIndex = 85;
             // 
             // AddPracticalSessions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(936, 481);
+            this.ClientSize = new System.Drawing.Size(936, 559);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.comboBox7);
+            this.Controls.Add(this.comboBox8);
             this.Controls.Add(this.label8);
+            this.Controls.Add(this.comboBox9);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.comboBox6);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.comboBox5);
@@ -407,17 +484,18 @@
             this.Text = "Add Practical Sessions";
             this.Load += new System.EventHandler(this.AddPracticalSessions_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resourceAllocationDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.instructorsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resourceAllocationDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.resourceAllocationDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.resourceAllocationDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.resourceAllocationDataSetBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.resourceAllocationDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.instructorsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.resourceAllocationDataSet2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.resourceAllocationDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.modulesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.resourceAllocationDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resourceAllocationDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.labsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resourceAllocationDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -460,6 +538,12 @@
         private ResourceAllocationDataSet4 resourceAllocationDataSet4;
         private System.Windows.Forms.BindingSource labsBindingSource;
         private ResourceAllocationDataSet4TableAdapters.LabsTableAdapter labsTableAdapter;
+        private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.ComboBox comboBox8;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox comboBox9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
