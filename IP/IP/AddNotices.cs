@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace IP
 {
-    public partial class AddNoctices : Form
+    public partial class AddNotices : Form
     {
-        public AddNoctices()
+        public AddNotices()
         {
             InitializeComponent();
         }
