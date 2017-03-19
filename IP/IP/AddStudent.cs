@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace IP
 {
-    public partial class Form1 : Form
+    public partial class AddStudent : Form
     {
-        public Form1()
+        public AddStudent()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
