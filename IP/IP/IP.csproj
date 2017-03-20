@@ -64,6 +64,18 @@
     <Compile Include="AddLecturer.Designer.cs">
       <DependentUpon>AddLecturer.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddLec_halls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddLec_halls.Designer.cs">
+      <DependentUpon>AddLec_halls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNoctices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNoctices.Designer.cs">
+      <DependentUpon>AddNoctices.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddPracticalSessions.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +99,24 @@
     </Compile>
     <Compile Include="AddLecture_dates.Designer.cs">
       <DependentUpon>AddLecture_dates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddBatch_notices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBatch_notices.Designer.cs">
+      <DependentUpon>AddBatch_notices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddDegree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDegree.Designer.cs">
+      <DependentUpon>AddDegree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddModules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddModules.Designer.cs">
+      <DependentUpon>AddModules.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -129,6 +159,12 @@
     <EmbeddedResource Include="AddLecturer.resx">
       <DependentUpon>AddLecturer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddLec_halls.resx">
+      <DependentUpon>AddLec_halls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNoctices.resx">
+      <DependentUpon>AddNoctices.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddPracticalSessions.resx">
       <DependentUpon>AddPracticalSessions.cs</DependentUpon>
     </EmbeddedResource>
@@ -140,6 +176,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddLecture_dates.resx">
       <DependentUpon>AddLecture_dates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddBatch_notices.resx">
+      <DependentUpon>AddBatch_notices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDegree.resx">
+      <DependentUpon>AddDegree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddModules.resx">
+      <DependentUpon>AddModules.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
