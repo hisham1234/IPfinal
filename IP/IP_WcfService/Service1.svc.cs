@@ -64,6 +64,15 @@ namespace IP_WcfService
            return  ins.viewLec();
         }
 
+        public DataTable  viewLabs(string day,string time,string gid)
+        {
+            PracSession pr = new PracSession();
+            pr._day = day;
+            pr._time = time;
+            pr._gid = gid;
+
+            return pr.viewLabs();
+        }
 
         public string GetData(int value)
         {

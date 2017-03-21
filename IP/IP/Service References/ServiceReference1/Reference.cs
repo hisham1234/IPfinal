@@ -125,6 +125,12 @@ namespace IP.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/viewIns", ReplyAction="http://tempuri.org/IService1/viewInsResponse")]
         System.Threading.Tasks.Task<System.Data.DataTable> viewInsAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/viewLabs", ReplyAction="http://tempuri.org/IService1/viewLabsResponse")]
+        System.Data.DataTable viewLabs(string day, string time, string gid);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/viewLabs", ReplyAction="http://tempuri.org/IService1/viewLabsResponse")]
+        System.Threading.Tasks.Task<System.Data.DataTable> viewLabsAsync(string day, string time, string gid);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -216,6 +222,14 @@ namespace IP.ServiceReference1 {
         
         public System.Threading.Tasks.Task<System.Data.DataTable> viewInsAsync() {
             return base.Channel.viewInsAsync();
+        }
+        
+        public System.Data.DataTable viewLabs(string day, string time, string gid) {
+            return base.Channel.viewLabs(day, time, gid);
+        }
+        
+        public System.Threading.Tasks.Task<System.Data.DataTable> viewLabsAsync(string day, string time, string gid) {
+            return base.Channel.viewLabsAsync(day, time, gid);
         }
     }
 }

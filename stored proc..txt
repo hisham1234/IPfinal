@@ -1,0 +1,34 @@
+
+vscode
+     public string  add()
+        {
+            string ad = "exec addIns @nic,@ins";
+
+            SqlCommand cmd = new SqlCommand(ad,con);
+            cmd.Parameters.AddWithValue("@nic", _nic);
+            cmd.Parameters.AddWithValue("@ins", _instr_id);
+
+            try
+            {
+                con.Open();
+                cmd.ExecuteNonQuery();
+                return "instructor added ";
+            }
+            catch(SqlException ex)
+            {
+                return ex.Message;
+            }
+            finally
+            {
+                con.Close();
+                
+            }
+
+
+        }
+   
+
+create procedure addIns @nic varchar(10),@ins_id varchar(50)
+as
+
+insert into instructors values(@nic,@ins_id)
