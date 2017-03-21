@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace IP
 {
-    public partial class AddNoctices : Form
+    public partial class AddBatch_notices : Form
     {
-        public AddNoctices()
+        public AddBatch_notices()
         {
             InitializeComponent();
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

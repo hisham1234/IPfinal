@@ -37,6 +37,9 @@ namespace IP_WcfService
 
         [OperationContract]
         DataTable viewIns();
+
+        [OperationContract]
+        DataTable viewLabs(string day, string time, string gid);
         // TODO: Add your service operations here
     }
 

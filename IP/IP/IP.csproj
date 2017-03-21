@@ -70,17 +70,11 @@
     <Compile Include="AddLec_halls.Designer.cs">
       <DependentUpon>AddLec_halls.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddNoctices.cs">
+    <Compile Include="AddNotices.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddNoctices.Designer.cs">
-      <DependentUpon>AddNoctices.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AddPracticalSessions.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddPracticalSessions.Designer.cs">
-      <DependentUpon>AddPracticalSessions.cs</DependentUpon>
+    <Compile Include="AddNotices.Designer.cs">
+      <DependentUpon>AddNotices.cs</DependentUpon>
     </Compile>
     <Compile Include="AdminPanelEntry.cs">
       <SubType>Form</SubType>
@@ -162,11 +156,8 @@
     <EmbeddedResource Include="AddLec_halls.resx">
       <DependentUpon>AddLec_halls.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddNoctices.resx">
-      <DependentUpon>AddNoctices.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AddPracticalSessions.resx">
-      <DependentUpon>AddPracticalSessions.cs</DependentUpon>
+    <EmbeddedResource Include="AddNotices.resx">
+      <DependentUpon>AddNotices.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminPanelEntry.resx">
       <DependentUpon>AdminPanelEntry.cs</DependentUpon>
