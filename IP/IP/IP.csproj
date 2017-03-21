@@ -145,22 +145,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ResourceAllocationDataSet4.xsd</DependentUpon>
     </Compile>
-    <Compile Include="ResourceAllocationDataSet5.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ResourceAllocationDataSet5.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="ResourceAllocationDataSet6.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ResourceAllocationDataSet6.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Service References\ServiceReference1\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Tstlbs.cs" />
     <EmbeddedResource Include="AddGroups.resx">
       <DependentUpon>AddGroups.cs</DependentUpon>
     </EmbeddedResource>
@@ -207,7 +196,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
     <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -272,28 +260,6 @@
     </None>
     <None Include="ResourceAllocationDataSet4.xss">
       <DependentUpon>ResourceAllocationDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="ResourceAllocationDataSet5.xsc">
-      <DependentUpon>ResourceAllocationDataSet5.xsd</DependentUpon>
-    </None>
-    <None Include="ResourceAllocationDataSet5.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>ResourceAllocationDataSet5.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="ResourceAllocationDataSet5.xss">
-      <DependentUpon>ResourceAllocationDataSet5.xsd</DependentUpon>
-    </None>
-    <None Include="ResourceAllocationDataSet6.xsc">
-      <DependentUpon>ResourceAllocationDataSet6.xsd</DependentUpon>
-    </None>
-    <None Include="ResourceAllocationDataSet6.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>ResourceAllocationDataSet6.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="ResourceAllocationDataSet6.xss">
-      <DependentUpon>ResourceAllocationDataSet6.xsd</DependentUpon>
     </None>
     <None Include="Service References\ServiceReference1\IP.ServiceReference1.CompositeType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>

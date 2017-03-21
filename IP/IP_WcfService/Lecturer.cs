@@ -137,7 +137,6 @@ namespace IP_WcfService
             SqlDataAdapter adp = new SqlDataAdapter(cmd);
             adp.Fill(dt);
             dt.TableName = "lecturers";
-          
 
             return dt;
 

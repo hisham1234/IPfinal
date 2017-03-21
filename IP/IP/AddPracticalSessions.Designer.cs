@@ -65,19 +65,13 @@
             this.labsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.resourceAllocationDataSet4 = new IP.ResourceAllocationDataSet4();
             this.labsTableAdapter = new IP.ResourceAllocationDataSet4TableAdapters.LabsTableAdapter();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.batchesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.resourceAllocationDataSet6 = new IP.ResourceAllocationDataSet6();
-            this.resourceAllocationDataSet5 = new IP.ResourceAllocationDataSet5();
-            this.batchesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.batchesTableAdapter = new IP.ResourceAllocationDataSet5TableAdapters.BatchesTableAdapter();
-            this.batchesTableAdapter1 = new IP.ResourceAllocationDataSet6TableAdapters.BatchesTableAdapter();
-            this.button3 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.resourceAllocationDataSet2)).BeginInit();
@@ -90,10 +84,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.resourceAllocationDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.labsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.resourceAllocationDataSet4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.batchesBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.resourceAllocationDataSet6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.resourceAllocationDataSet5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.batchesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -153,17 +143,17 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(409, 208);
+            this.label3.Location = new System.Drawing.Point(409, 249);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 20);
+            this.label3.Size = new System.Drawing.Size(44, 20);
             this.label3.TabIndex = 63;
-            this.label3.Text = "StartDate";
+            this.label3.Text = "Date";
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(526, 208);
+            this.dateTimePicker1.Location = new System.Drawing.Point(526, 249);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 26);
             this.dateTimePicker1.TabIndex = 64;
@@ -200,7 +190,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(409, 253);
+            this.label5.Location = new System.Drawing.Point(409, 306);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(43, 20);
             this.label5.TabIndex = 67;
@@ -241,7 +231,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(409, 311);
+            this.label9.Location = new System.Drawing.Point(409, 364);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(98, 20);
             this.label9.TabIndex = 71;
@@ -253,7 +243,7 @@
             this.comboBox3.DisplayMember = "instructor_id";
             this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(528, 311);
+            this.comboBox3.Location = new System.Drawing.Point(526, 356);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(198, 28);
             this.comboBox3.TabIndex = 72;
@@ -271,18 +261,17 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(776, 438);
+            this.button2.Location = new System.Drawing.Point(411, 507);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(243, 40);
+            this.button2.Size = new System.Drawing.Size(313, 40);
             this.button2.TabIndex = 74;
-            this.button2.Text = "View Practical Sessions";
+            this.button2.Text = "View Allocated Practical Sessions";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(256, 443);
+            this.button1.Location = new System.Drawing.Point(204, 507);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(111, 40);
             this.button1.TabIndex = 73;
@@ -345,7 +334,7 @@
             "9-11",
             "11.15-1.15",
             "2-4"});
-            this.comboBox5.Location = new System.Drawing.Point(528, 253);
+            this.comboBox5.Location = new System.Drawing.Point(528, 298);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(198, 28);
             this.comboBox5.TabIndex = 76;
@@ -386,115 +375,91 @@
             // 
             this.labsTableAdapter.ClearBeforeFill = true;
             // 
-            // dateTimePicker2
+            // comboBox7
             // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(819, 203);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 26);
-            this.dateTimePicker2.TabIndex = 80;
+            this.comboBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Items.AddRange(new object[] {
+            "9-11",
+            "11.15-1.15",
+            "2-4"});
+            this.comboBox7.Location = new System.Drawing.Point(528, 407);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(198, 28);
+            this.comboBox7.TabIndex = 84;
             // 
-            // label10
+            // comboBox8
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(740, 208);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(73, 20);
-            this.label10.TabIndex = 81;
-            this.label10.Text = "EndDate";
+            this.comboBox8.DataSource = this.instructorsBindingSource;
+            this.comboBox8.DisplayMember = "instructor_id";
+            this.comboBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox8.FormattingEnabled = true;
+            this.comboBox8.Location = new System.Drawing.Point(526, 465);
+            this.comboBox8.Name = "comboBox8";
+            this.comboBox8.Size = new System.Drawing.Size(198, 28);
+            this.comboBox8.TabIndex = 83;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(33, 208);
+            this.label8.Location = new System.Drawing.Point(409, 473);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(72, 20);
+            this.label8.Size = new System.Drawing.Size(63, 20);
             this.label8.TabIndex = 82;
-            this.label8.Text = "Batch ID";
+            this.label8.Text = "Term Id";
             // 
-            // comboBox7
+            // comboBox9
             // 
-            this.comboBox7.DataSource = this.batchesBindingSource1;
-            this.comboBox7.DisplayMember = "B_name";
-            this.comboBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(169, 205);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(198, 28);
-            this.comboBox7.TabIndex = 83;
+            this.comboBox9.DataSource = this.groupsBindingSource;
+            this.comboBox9.DisplayMember = "Group_id";
+            this.comboBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox9.FormattingEnabled = true;
+            this.comboBox9.Location = new System.Drawing.Point(169, 473);
+            this.comboBox9.Name = "comboBox9";
+            this.comboBox9.Size = new System.Drawing.Size(198, 28);
+            this.comboBox9.TabIndex = 81;
             // 
-            // batchesBindingSource1
+            // label10
             // 
-            this.batchesBindingSource1.DataMember = "Batches";
-            this.batchesBindingSource1.DataSource = this.resourceAllocationDataSet6;
-            // 
-            // resourceAllocationDataSet6
-            // 
-            this.resourceAllocationDataSet6.DataSetName = "ResourceAllocationDataSet6";
-            this.resourceAllocationDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // resourceAllocationDataSet5
-            // 
-            this.resourceAllocationDataSet5.DataSetName = "ResourceAllocationDataSet5";
-            this.resourceAllocationDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // batchesBindingSource
-            // 
-            this.batchesBindingSource.DataMember = "Batches";
-            this.batchesBindingSource.DataSource = this.resourceAllocationDataSet5;
-            // 
-            // batchesTableAdapter
-            // 
-            this.batchesTableAdapter.ClearBeforeFill = true;
-            // 
-            // batchesTableAdapter1
-            // 
-            this.batchesTableAdapter1.ClearBeforeFill = true;
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(526, 438);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(228, 40);
-            this.button3.TabIndex = 84;
-            this.button3.Text = "View Available Labs";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(744, 248);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(324, 203);
-            this.dataGridView1.TabIndex = 85;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(33, 473);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(69, 20);
+            this.label10.TabIndex = 80;
+            this.label10.Text = "Batch Id";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(488, 378);
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(409, 415);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(41, 13);
-            this.label13.TabIndex = 86;
-            this.label13.Text = "label13";
+            this.label13.Size = new System.Drawing.Size(64, 20);
+            this.label13.TabIndex = 79;
+            this.label13.Text = "Prac_Id";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(479, 281);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(346, 174);
+            this.dataGridView1.TabIndex = 85;
             // 
             // AddPracticalSessions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1080, 490);
-            this.Controls.Add(this.label13);
+            this.ClientSize = new System.Drawing.Size(936, 559);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.comboBox7);
+            this.Controls.Add(this.comboBox8);
             this.Controls.Add(this.label8);
+            this.Controls.Add(this.comboBox9);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.comboBox6);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.comboBox5);
@@ -530,10 +495,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.resourceAllocationDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.labsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.resourceAllocationDataSet4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.batchesBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.resourceAllocationDataSet6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.resourceAllocationDataSet5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.batchesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -577,18 +538,12 @@
         private ResourceAllocationDataSet4 resourceAllocationDataSet4;
         private System.Windows.Forms.BindingSource labsBindingSource;
         private ResourceAllocationDataSet4TableAdapters.LabsTableAdapter labsTableAdapter;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox comboBox7;
-        private ResourceAllocationDataSet5 resourceAllocationDataSet5;
-        private System.Windows.Forms.BindingSource batchesBindingSource;
-        private ResourceAllocationDataSet5TableAdapters.BatchesTableAdapter batchesTableAdapter;
-        private ResourceAllocationDataSet6 resourceAllocationDataSet6;
-        private System.Windows.Forms.BindingSource batchesBindingSource1;
-        private ResourceAllocationDataSet6TableAdapters.BatchesTableAdapter batchesTableAdapter1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ComboBox comboBox8;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox comboBox9;
+        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
